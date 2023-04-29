@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Roboto, system-ui, sans-serif;
+      }
+    :root{
+        --swiper-pagination-color: rgb(255, 186, 0);
+    }
+    .dark {
+        --bg-primary: 101, 91, 80;
+        --bg-secondary: 28, 26, 24;
+
+        --text-primary: 255, 226, 199;
+        --text-secondary: 255, 186, 0;
+    }
+    
+}
