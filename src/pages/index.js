@@ -18,23 +18,36 @@ export default function Home() {
           width={250}
           height={250}
         />
-        <p className="mx-auto pt-8 font-black text-6xl">Hey, I'm Prafulla Pal</p>
-        <p className="mx-auto pt-6 font-medium text-2xl">I'm a Full Stack Web Developer</p>
+        <p className="mx-auto pt-8 font-black text-6xl">
+          Hey, I'm Prafulla Pal
+        </p>
+        <p className="mx-auto pt-6 font-medium text-2xl">
+          I'm a Full Stack Web Developer
+        </p>
       </div>
       <Skills />
-      <Projects/>
+      <Projects />
       {/* My Projects Section */}
       {/* About Me Section */}
-      <div id="about" className="max-w-screen-xl flex flex-col mx-auto p-8">
-        <p className="text-4xl font-bold relative self-center">About Me</p>
-        <div className="flex flex-row flex-wrap">
-        <p className="pt-12 font-normal text-xl text-justify min-w-1/2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-          officia deserunt mollit anim id est laborum.</p>
-      <TextSphere/>
-          </div>
+      <div
+        id="about"
+        className="max-w-screen-xl xl:mx-auto lg:mx-8 mx-8 grid grid-cols-6 gap-4"
+      >
+        <div className="text-4xl font-bold col-start-3 col-span-2 mx-auto">
+          About Me
+        </div>
+        <div className="p-8 font-normal text-xl text-justify col-start-1 md:col-span-3 col-span-6 mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div className="col-start-1 md:col-start-4">
+          <TextSphere />
+        </div>
       </div>
     </Layout>
   );
