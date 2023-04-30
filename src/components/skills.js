@@ -42,7 +42,6 @@ export default function Skills() {
     { key: "sql", value: <SiSqlite size={"50px"} /> },
   ];
   return (
-    <div className="flex flex-wrap items-center justify-between mx-auto bg-secondary bg-opacity-[0.2]">
       <Swiper
         slidesPerView={5}
         loop={true}
@@ -53,7 +52,7 @@ export default function Skills() {
         autoplay={{ delay: 2000 }}
         scrollbar={{ draggable: true }}
         modules={[Pagination, Scrollbar, Autoplay]}
-        className="mySwiper max-w-screen-xl"
+        className="mySwiper max-w-screen-xl flex flex-wrap items-center justify-between mx-auto bg-secondary bg-opacity-[0.2]"
       >
         {logos.map((logo) => {
           return (
@@ -63,6 +62,5 @@ export default function Skills() {
           );
         })}
       </Swiper>
-    </div>
   );
 }

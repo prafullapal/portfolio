@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Header />
-      <div>{children}</div>
+      <div className="max-w-screen-xl flex flex-col items-center justify-between mx-auto">{children}</div>
     </>
   );
 }

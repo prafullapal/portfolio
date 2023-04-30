@@ -5,7 +5,7 @@ export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
     <>
-      <nav className="bg-secondary fixed w-full z-10">
+      <nav className="bg-secondary fixed w-full z-50">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
             <Image
