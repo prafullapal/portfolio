@@ -25,12 +25,12 @@ export default function Projects() {
   }]
   return (
     <>
-    <p className="text-4xl font-bold text-center my-8">
-        My Projects
+    <p className="text-4xl font-bold text-center py-8">
+      My Projects
     </p>
     <div  className="flex flex-row flex-wrap justify-center">
-    {projects.map((project)=> <>
-      <div className="bg-secondary rounded-md h-min w-96 p-8 my-4 me-4 hover:bg-opacity-[0.5]" key={project.title}>
+    {projects.map((project,idx)=> 
+      <div className="bg-card rounded-md h-min w-96 p-8 my-4 me-4 hover:bg-opacity-[0.5]" key={idx}>
         <Image src={project.img} width={320} height={250} alt={`Project - ${project.title}`} className="hover:shadow-2xl"></Image>
         <p className="text-2xl font-bold text-center my-4">
         {project.title}
@@ -38,15 +38,13 @@ export default function Projects() {
         <p className="font-normal text-lg text-justify">
           {project.desc}
         </p>
-        {project.tags.map((tag)=> <span key={tag} className="inline-flex items-center rounded-md bg-yellow-50 me-2 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-orange-600/30">
-        {tag}
-        </span>)}
+        {project.tags.map((tag,idy)=> 
+        <span key={idy} className="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-blueText ring-1 ring-inset ring-blueText-700/10 me-2">{tag}</span>)}
         <div className="flex flex-row justify-between">
           <button className="rounded-md bg-yellow mt-2 p-2 hover:bg-opacity-[0.1]">Github</button>
           <button className="rounded-md bg-yellow mt-2 p-2 hover:bg-opacity-[0.1]">Preview</button>
         </div>
-      </div>
-    </>)}
+      </div>)}
     </div>
     </>
   );

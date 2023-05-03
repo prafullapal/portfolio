@@ -52,7 +52,7 @@ export default function Skills() {
         autoplay={{ delay: 2000 }}
         scrollbar={{ draggable: true }}
         modules={[Pagination, Scrollbar, Autoplay]}
-        className="mySwiper max-w-screen-xl flex flex-wrap items-center justify-between mx-auto bg-secondary bg-opacity-[0.2]"
+        className="mySwiper max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
       >
         {logos.map((logo) => {
           return (

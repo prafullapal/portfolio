@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import TagCloud from "TagCloud";
+
 export default function TextSphere() {
   useEffect(() => {
     return () => {
@@ -41,7 +42,7 @@ export default function TextSphere() {
   return (
     <>
       <div className="text-sphere mx-auto">
-        <span className="tagcloud"></span>
+        <span className="tagcloud text-secondary"></span>
       </div>
     </>
   );

@@ -26,16 +26,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      textColor,
-      backgroundColor,
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "bisque": "#ffe2c7",
-        "yellow": "#ffba00"
+        "dark": "#272935",
+        "dark-2": "#23252f",
+        "card": "#343A40",
+        "whiteText": "#f8f8f2",
+        "blueText": "#2962ff",
       }
     },
   },
