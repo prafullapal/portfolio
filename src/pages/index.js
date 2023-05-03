@@ -6,8 +6,10 @@ import TextSphere from "@/components/TextSphere";
 import Projects from "@/components/Projects";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
+import Contact from "@/components/contact";
 
 import { MdEmail } from "react-icons/md";
+import { BsHeartFill } from "react-icons/bs";
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,8 +42,8 @@ export default function Home() {
       <section id="home" className="bg-dark">
         <div className="flex flex-col p-12 min-h-screen justify-center">
           <Image
-            className={`mx-auto mt-8 border-2 border-blueText rounded-full bg-opacity-[0.5]`}
-            src="https://d33wubrfki0l68.cloudfront.net/32c48e23e828c42a99a37db81e2a91d7c8eed4de/d134a/assets/png/ram-maheshwari.png"
+            className={`mx-auto mt-8 border-2 border-blueText shadow-none transition-shadow duration-300 ease-in-out hover:shadow-md hover:shadow-blueText rounded-full bg-opacity-[0.5]`}
+            src={"/images/ProfilePic.JPG"}
             alt="Profile Picture"
             width={250}
             height={250}
@@ -52,7 +54,12 @@ export default function Home() {
           <div className="mx-auto flex flex-row pt-6 font-medium md:text-2xl text-xl">
             <Typewriter
               options={{
-                strings: ["A Full Stack Web Developer", "An Undergraduate"],
+                strings: [
+                  "A B.Tech Undergrad Student",
+                  "A Software Developer",
+                  "A Full Stack Web Developer",
+                  "An Android App Developer",
+                ],
                 autoStart: true,
                 loop: true,
               }}
@@ -105,6 +112,17 @@ export default function Home() {
         <Projects />
       </section>
 
+      <section id="contact" className="bg-dark-2">
+        <p className="text-4xl font-bold text-center py-8">Contact Me</p>
+        <Contact />
+      </section>
+
+      <section id="footer" className="bg-dark">
+        <h1 className="text-center text-gray-500 py-8 block">
+          Made with <BsHeartFill color="red" style={{ display: "inline" }} /> by
+          Prafulla Pal
+        </h1>
+      </section>
     </Layout>
   );
 }
