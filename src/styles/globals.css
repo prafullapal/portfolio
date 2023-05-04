@@ -5,8 +5,9 @@
 @layer base {
     html {
         font-family: Roboto, system-ui, sans-serif;
-      }
-    :root{
+    }
+
+    :root {
         --swiper-pagination-color: rgb(41, 98, 255);
     }
 }

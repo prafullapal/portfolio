@@ -42,25 +42,25 @@ export default function Skills() {
     { key: "sql", value: <SiSqlite size={"50px"} /> },
   ];
   return (
-      <Swiper
-        slidesPerView={5}
-        loop={true}
-        pagination={{
-          dynamicBullets: true,
-          clickable: true,
-        }}
-        autoplay={{ delay: 2000 }}
-        scrollbar={{ draggable: true }}
-        modules={[Pagination, Scrollbar, Autoplay]}
-        className="mySwiper max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
-      >
-        {logos.map((logo) => {
-          return (
-            <SwiperSlide key={logo.key} className="p-8">
-              {logo.value}
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+    <Swiper
+      slidesPerView={5}
+      loop={true}
+      pagination={{
+        dynamicBullets: true,
+        clickable: true,
+      }}
+      autoplay={{ delay: 2000 }}
+      scrollbar={{ draggable: true }}
+      modules={[Pagination, Scrollbar, Autoplay]}
+      className="mySwiper max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+    >
+      {logos.map((logo) => {
+        return (
+          <SwiperSlide key={logo.key} className="p-8">
+            {logo.value}
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 }

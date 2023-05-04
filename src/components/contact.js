@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 
 export default function Contact() {
   const [values, setValues] = useState({
@@ -8,6 +8,9 @@ export default function Contact() {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
   const handleChange = (name) => (event) => {
     setValues({ ...values, [name]: event.target.value });
   };
@@ -16,7 +19,7 @@ export default function Contact() {
     console.log(values);
     //Send or Mail the data received.
   };
-    return(
+  return (
     <form className="w-full max-w-xl mx-auto">
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -27,16 +30,20 @@ export default function Contact() {
             First Name
           </label>
           <input
-            className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            className={`appearance-none block w-full bg-gray-200 text-gray-700 border ${
+              error ? "border-red-500" : "border-gray-200"
+            } rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white`}
             id="grid-first-name"
             name="fname"
             type="text"
             placeholder="John"
             onChange={handleChange("fname")}
           />
-          <p className="text-red-500 text-xs italic">
-            Please fill out this field.
-          </p>
+          {error && (
+            <p className="text-red-500 text-xs italic">
+              Please fill out this field.
+            </p>
+          )}
         </div>
         <div className="w-full md:w-1/2 px-3">
           <label
@@ -59,7 +66,7 @@ export default function Contact() {
         <div className="w-full px-3">
           <label
             className="block uppercase tracking-wide text-xs font-bold mb-2"
-            for="grid-password"
+            htmlFor="grid-password"
           >
             E-mail
           </label>
@@ -90,8 +97,8 @@ export default function Contact() {
             onChange={handleChange("message")}
           ></textarea>
           <p className="text-gray-600 text-xs italic">
-            Re-size can be disabled by set by resize-none / resize-y /
-            resize-x / resize
+            Re-size can be disabled by set by resize-none / resize-y / resize-x
+            / resize
           </p>
         </div>
       </div>
@@ -105,10 +112,8 @@ export default function Contact() {
             Send
           </button>
         </div>
-        <div class="md:w-2/3"></div>
+        <div className="md:w-2/3"></div>
       </div>
     </form>
-)
+  );
 }
-
-
