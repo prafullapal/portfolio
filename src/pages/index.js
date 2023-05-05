@@ -125,7 +125,7 @@ export default function Home() {
       <section id="education" className="bg-dark-2">
         {/* <Education /> */}
         <p className="text-4xl font-bold text-center py-8">Education</p>
-        <div className="mx-[15vw]">
+        <div className="md:mx-[25vw] mx-[15vw]">
           <ol className="relative border-l border-gray-700 pb-8">
             <li className="bg-card p-8 rounded ml-6 mb-4">
               <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 ring-dark-2 bg-dark">
