@@ -47,10 +47,10 @@ export default function Home() {
             width={250}
             height={250}
           />
-          <p className="mx-auto pt-8 font-black md:text-6xl text-4xl">
+          <p className="mx-auto pt-8 font-black md:text-6xl sm:text-4xl text-2xl">
             Hey, I&#39;m Prafulla Pal
           </p>
-          <div className="mx-auto flex flex-row pt-6 font-medium md:text-2xl text-xl">
+          <div className="mx-auto flex flex-row pt-6 font-medium md:text-2xl text-lg">
             <Typewriter
               options={{
                 strings: [
