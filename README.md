@@ -36,11 +36,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
-Colour Palette
-Lucky Point     #2E2C53     rgb(46,44,83)
-Deep Sky Blue   #20B9FC     rgb(32,185,252)
-Neon Blue       #5664FA     rgb(86,100,250)
-Pumpkin         #FC6B21     rgb(252,107,33)
-Old Rose        #CB3161     rgb(203,49,97)

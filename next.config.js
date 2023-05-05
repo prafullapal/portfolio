@@ -5,10 +5,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "d33wubrfki0l68.cloudfront.net",
-      },
-      {
-        protocol: "https",
         hostname: "flowbite.com",
       },
     ],

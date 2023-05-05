@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import Layout from "@/components/layout";
 import Skills from "@/components/skills";
 import Image from "next/image";
-import TextSphere from "@/components/TextSphere";
 import Projects from "@/components/Projects";
 import Typewriter from "typewriter-effect";
 import Link from "next/link";
@@ -106,7 +105,12 @@ export default function Home() {
               web experiences together.
             </p>
           </div>
-          <TextSphere />
+          <Image
+              src="/images/bg.png"
+              width={500}
+              height={500}
+              alt="bg"
+            ></Image>
         </div>
       </section>
 
