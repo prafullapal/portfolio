@@ -32,7 +32,7 @@ export default function Home() {
       url: "https://www.instagram.com/prafulla_pal_/",
     },
   ];
-
+  const heroText = "Hey, I'm Prafulla Pal";
   const resume =
     "https://drive.google.com/file/d/1cBYMVUnmGNipYYrw7MUlIgDJJKecbyhj/view?usp=sharing";
 
@@ -47,8 +47,14 @@ export default function Home() {
             width={250}
             height={250}
           />
-          <p className="mx-auto pt-8 font-black md:text-6xl sm:text-4xl text-2xl">
-            Hey, I&#39;m Prafulla Pal
+          <p className="mx-auto pt-8 flex flex-row gap-1 font-black md:text-6xl sm:text-4xl text-2xl">
+            {[...heroText].map((text, index) => {
+              return (
+                <span key={index} className="inline-flex hover:animate-jello">
+                  {text}
+                </span>
+              );
+            })}
           </p>
           <div className="mx-auto flex flex-row pt-6 font-medium md:text-2xl text-lg">
             <Typewriter
@@ -105,12 +111,7 @@ export default function Home() {
               web experiences together.
             </p>
           </div>
-          <Image
-              src="/images/bg.png"
-              width={500}
-              height={500}
-              alt="bg"
-            ></Image>
+          <Image src="/images/bg.png" width={500} height={500} alt="bg"></Image>
         </div>
       </section>
 
@@ -235,8 +236,13 @@ export default function Home() {
 
       <section id="footer" className="bg-dark-2">
         <h1 className="text-center text-gray-500 py-8 block">
-          Made with <BsHeartFill color="red" style={{ display: "inline" }} /> by
-          Prafulla Pal
+          Designed and Build with {" "}
+          <BsHeartFill
+            color="red"
+            style={{ display: "inline" }}
+            className="animate-heartBeat"
+          />{" "}
+          by Prafulla Pal, 2023 All rights reserved.
         </h1>
       </section>
     </Layout>

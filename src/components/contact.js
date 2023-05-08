@@ -21,7 +21,7 @@ export default function Contact() {
   };
   return (
     <form className="w-full max-w-xl mx-auto">
-      <div className="flex flex-wrap -mx-3 mb-6">
+      <div className="flex flex-wrap mx-3 mb-6">
         <div className="w-full mx-2 md:mx-0 md:w-1/2 px-3 mb-6 md:mb-0">
           <label
             className="block uppercase tracking-wide text-xs font-bold mb-2"
@@ -62,7 +62,7 @@ export default function Contact() {
           />
         </div>
       </div>
-      <div className="flex flex-wrap -mx-3 mb-6">
+      <div className="flex flex-wrap mx-3 mb-6">
         <div className="w-full px-3 mx-2 md:mx-0">
           <label
             className="block uppercase tracking-wide text-xs font-bold mb-2"
@@ -82,7 +82,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap -mx-3 mb-6">
+      <div className="flex flex-wrap mx-3 mb-6">
         <div className="w-full px-3 mx-2 md:mx-0">
           <label
             className="block uppercase tracking-wide text-xs font-bold mb-2"
@@ -102,8 +102,8 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="md:flex md:items-center pb-8">
-        <div className="md:w-1/3 mx-2 md:mx-0">
+      <div className="md:flex md:items-center mx-3 pb-8">
+        <div className="md:w-1/3 mx-2 px-3 md:mx-0">
           <button
             className="shadow bg-blueText bg-opacity-[0.8] hover:bg-opacity-[0.6] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
             type="button"
